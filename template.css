@@ -1,0 +1,110 @@
+/*-----Global-----*/
+* {
+    margin: :0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html {
+    font-family: proxima nova, sans-serif;
+}
+body {
+    width: 100%;
+    background-color: #000;
+}
+
+/*-----main-----*/
+main {
+	height: 200px;
+	color: #ff0000;
+}
+
+/*-----nav-----*/
+nav {
+    position: relative;
+    max-width: 100%;
+    min-height: 40px;
+    background: #ff0000;
+	margin: 0 auto;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    line-height: 40px;
+}
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 20px;
+    display: inline-block;
+    line-height: 40px;
+}
+nav a:hover{
+    display:block;
+}
+.toggle-nav, .hamburger {
+    display: none;
+}
+.expand {
+    display: block;
+}
+
+/*-----imanges-----*/
+.images{
+	height: 200px;
+	color: #fff;
+}
+.weather {
+	background-color: #fff;
+	height: 100px;
+}
+h3 {
+	;
+}
+
+/*-----footer-----*/
+footer {
+	background-color: #fff;
+	height: 150px;
+	text-align: center;
+	font-size: 12px;
+}
+
+/*-----Responsive-----*/
+@media (max-width:768px) {
+    .toggle-nav {
+        display: block;
+        height: 40px;
+        border-bottom: 1px dotted #000;
+    } 
+    .hamburger {
+        display: block;
+        margin-right: 15px;
+        float: right;
+        font-size: 40px;
+        transform: rotate(90deg);
+        height: 40px;
+    }
+    humburger:hover {
+       
+    }
+    nav li {
+        display: block;
+        border-bottom: 1px dotted #000;
+    }
+    nav a {
+        width: 100%;
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+    nav li:last-child {
+        border-bottom: 3px solid #000;
+    }
+    nav ul {
+        display: none;
+    }
+}
