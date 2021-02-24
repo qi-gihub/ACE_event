@@ -1,0 +1,46 @@
+<DOCYPE html>
+<html lang="en">
+<html>
+<head>
+    <title>Contact Forms</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+ </head> 
+	<body>
+		
+	<div>
+	<?php
+if (isset($_POST['send'])){
+$fullname    				= $_POST['fullname'];
+$email    					= $_POST['email'];
+$comment    				= $_POST['comment'];
+$submit    					= $_POST['submit'];
+
+echo $fullname. "" .$age  "" .$email ""  .$send;
+}
+?>
+	</div>
+	<div>
+		<form action="contact.php" method="post">
+         <div class="row">
+           <div class="col-sm-3">
+				<h2>Concact Us</h2>
+				<label for="fullname"><b>Full Name</b></label>
+			<input class="form-control" type="text" name="fullname" required>
+				
+				<label for="email"><b>Email Address</b></label>
+			<input class="form-control" type="email" name="email" required>
+				
+			 <label for="comment"><b>Question or Comment</b></label>
+             <textarea id="comment" name="comment">Put your question or comment here.</textarea>
+		     
+			 <hr class="mb-3">
+			 <input class="btn btn-primary" type="submit" name="send" value="Send">
+			 </div>
+			</div>
+			
+		</form>
+		</div>
+	</body>
+	</html>

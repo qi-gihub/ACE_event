@@ -1,0 +1,111 @@
+<DOCYPE html>
+<html lang="en">
+<html>
+<head>
+    <title>Registration Forms</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
+    <link rel="stylesheet" type="text/css" href=bootstrap.min.css>
+ </head> 
+	<body>
+	
+		<div>
+	
+	<?php
+	if (isset($_POST['creat'])){
+	$fullname    					= $_POST['fullname'];
+	$age        				    = $_POST['age'];
+	$Gender           				= $_POST['Gender'];
+	$phonenumber   	  				= $_POST['phonenumber'];
+ 	$email            				= $_POST['email'];
+	$saturdayevents 				= $_POST['saturdayevents'];
+	$sundayevents 					= $_POST['sundayevents'];
+	$emergencycontactname 			= $_POST['emergencycontactname'];
+	$emergencycontactphonenumber  	= $_POST['emergencycontactphonenumber'];
+	$sundayevents 					= $_POST['sundayevents'];
+	$passworld 						= $_POST['passworld'];
+
+	echo $fullname. "" .$age "" .$Gender "" .$phonenumber "" .$email "" .$saturdayevents "" .$sundayevents "" .$emergencycontactname "" .$emergencycontactphonenumber "" .$sundayevents "" .$passworld;
+}
+?>
+	</div>
+	
+		<div>
+		<form action="registration.php" method="post">
+		<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+			<h1>Registration</h1>
+			<label for="fullname"><b>Full Name</b></label>
+			<input class="form-control" type="text" name="fullname" required>
+			
+			<label for="age"><b>Age</b></label>
+			<input class="form-control" type="text" name="age" required>
+			 
+			<hr class="mb-3">
+			<label class="heading"><b>Gender</b></label>
+			<select name="formGender">
+  			<option value="">Select...</option>
+  			<option value="M">Male</option>
+  			<option value="F">Female</option>
+			<option value="O">Other</option>
+            </select>
+			 
+			<hr class="mb-3">
+			<label for="phonenumber"><b>Phone Number</b></label>
+			<input class="form-control" type="text" name="phonenumber" required>
+			
+			<label for="email"><b>Email Address</b></label>
+			<input class="form-control" type="email" name="email" required>
+			
+			<hr class="mb-3">
+			<label class="heading"><b>Role</b></label>
+			<select name="formRole">
+  			<option value="">Select...</option>
+  			<option value="A">Athlete</option>
+  			<option value="V">Volunteer</option>
+            </select>
+            
+			<hr class="mb-3">
+			<label class="heading"><b>T-shirt Size</b></label>
+			<select name="formTshirtSize">
+  			<option value="">Select...</option>
+  			<option value="S">S</option>
+  			<option value="M">M</option>
+			<option value="L">L</option>
+  			<option value="X">XL</option>
+            </select>
+			
+			<hr class="mb-3">
+			<label for="saturdayevents"><b>Saturday Events Registering For</b></label>
+			<input class="form-control" type="saturdayevents" name="saturdayevents" required>
+				
+			<label for="sundayevents"><b>Sunday Events Registering For</b></label>
+			<input class="form-control" type="sundayevents" name="sundayevents" required>
+			
+		    <hr class="mb-3">
+			<label for="specialneed"><b>Special Need</b></label>
+            <textarea id="specialneed" name="specialneed">Put your special accommodations need here.</textarea>
+			
+			<hr class="mb-3">
+			<h3>Emergency Information</h3>
+			<label for="emergencycontactname"><b>Emergency Contact's Name</b></label>
+			<input class="form-control" type="emergencycontactname" name="emergencycontactname" required>
+			
+			<label for="emergencycontactphonenumber"><b>Phone Number</b></label>
+			<input class="form-control" type="emergencycontactphonenumber" name="emergencycontactphonenumber" required>
+			
+			<label for="passworld"><b>Password</b></label>
+			<input class="form-control" type="password" name="password" required>
+			
+			<hr class="mb-3">
+			<input class="btn btn-primary" type="submit" name="creat" value="Register">
+			 </div>
+			</div>
+		  </div>
+		</form>
+		</div>
+	
+	</body>
+	
+	</html>
