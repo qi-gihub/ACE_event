@@ -18,20 +18,18 @@
 	$Gender           				= $_POST['Gender'];
 	$phonenumber   	  				= $_POST['phonenumber'];
  	$email            				= $_POST['email'];
-	$saturdayevents 				= $_POST['saturdayevents'];
-	$sundayevents 					= $_POST['sundayevents'];
 	$emergencycontactname 			= $_POST['emergencycontactname'];
 	$emergencycontactphonenumber  	= $_POST['emergencycontactphonenumber'];
-	$sundayevents 					= $_POST['sundayevents'];
-	$passworld 						= $_POST['passworld'];
-
-	echo $fullname. "" .$age "" .$Gender "" .$phonenumber "" .$email "" .$saturdayevents "" .$sundayevents "" .$emergencycontactname "" .$emergencycontactphonenumber "" .$sundayevents "" .$passworld;
+	
+	
+	echo $fullname. "" .$age "" .$Gender "" .$phonenumber "" .$email "" .$emergencycontactname "" .$emergencycontactphonenumber;
 }
 ?>
 	</div>
 	
 		<div>
-		<form action="registration.php" method="post">
+		<form action=”mailto:qiliu.richmond@pcc.edu” method="post" 
+	     enctype=”multipart/form-data” name=”EmailTestForm”>
 		<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
@@ -77,15 +75,12 @@
             </select>
 			
 			<hr class="mb-3">
-			<label for="saturdayevents"><b>Saturday Events Registering For</b></label>
-			<input class="form-control" type="saturdayevents" name="saturdayevents" required>
-				
-			<label for="sundayevents"><b>Sunday Events Registering For</b></label>
-			<input class="form-control" type="sundayevents" name="sundayevents" required>
-			
-		    <hr class="mb-3">
-			<label for="specialneed"><b>Special Need</b></label>
-            <textarea id="specialneed" name="specialneed">Put your special accommodations need here.</textarea>
+			<label class="heading"><b>Choose event</b></label>
+			<select name="formEvent">
+  			<option value="">Select...</option>
+			<option value="saturdayay">Saturday</option>
+  			<option value="sunday">Sunday</option>
+  			</select>
 			
 			<hr class="mb-3">
 			<h3>Emergency Information</h3>
@@ -95,8 +90,9 @@
 			<label for="emergencycontactphonenumber"><b>Phone Number</b></label>
 			<input class="form-control" type="emergencycontactphonenumber" name="emergencycontactphonenumber" required>
 			
-			<label for="passworld"><b>Password</b></label>
-			<input class="form-control" type="password" name="password" required>
+			 <hr class="mb-3">
+			<label for="specialneed"><b>Special Need</b></label>
+            <textarea id="specialneed" name="specialneed">Put your special accommodations need here.</textarea>
 			
 			<hr class="mb-3">
 			<input class="btn btn-primary" type="submit" name="creat" value="Register">
