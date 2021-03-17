@@ -5,9 +5,9 @@
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
        </div>
     </div>
-    <p>0 2021 Qi Richmond</p>
+    <p>&copy 2021 Qi Richmond</p>
 <icons>
-<a class="social" href="https://facebook.com" target="_blank">
+<a class="social facebook" href="https://www.facebook.com/Cas222Aceinthehole-110661963841617/?ref=nf&hc_ref=ARSeQxaFEb6krTt17X_QJdh75xpv73pgNJyW8WmWMVd4mp5U0Xf7nE_vtQqdV_h9VHc">
      <div class="front">
     <i class="fa fa-facebook"></i>
      </div>
@@ -15,7 +15,7 @@
     <i class="fa fa-facebook"></i>
      </div>
 </a>
-<a class="social social-twitter" href="https://twitter.com">
+<a class="social social-twitter" href="https://twitter.com/pcccas222">
      <div class="front">
     <i class="fa fa-twitter"></i>
      </div>
@@ -23,22 +23,8 @@
     <i class="fa fa-twitter"></i>
      </div>
 </a>
-    <a class="social social-googleplus" href="https://sites.google.com/new" >
-     <div class="front">
-    <i class="fa fa-google-plus"></i>
-     </div>
-     <div class="back">
-    <i class="fa fa-google-plus"></i>
-     </div>
-</a>
-    <a class="social social-linkedin" href="https://www.linkedin.com/">
-     <div class="front">
-    <i class="fa fa-linkedin"></i>
-     </div>
-     <div class="back">
-    <i class="fa fa-linkedin"></i>
-     </div>
-</a>
+  
+    
          </icons>
 
         </footer>

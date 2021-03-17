@@ -5,7 +5,7 @@ include 'header.php';
 	<section>
         <h2>Registration Form</h2>
 		<div class="container">
-		<form action="https://formspree.io/f/xrgowbar" method="post" id="my-form">
+		<form action="insert.php" method="post" id="my-form">
 			
 			<div class="form-group">
 			<label for="fullName">Full Name</label>
@@ -27,36 +27,7 @@ include 'header.php';
             </select>
 			</div>
 			
-			<div class="form-group">
-			<label class="heading">Role</label>
-			<select name="Role">
-  			<option value="">Select...</option>
-  			<option value="Athlete">Athlete</option>
-  			<option value="Vsolunteer">Volunteer</option>
-            </select>
-			</div>
-			
-			<div class="form-group">
-			<label class="heading">T-shirt Size</label>
-			<select name="TshirtSize">
-  			<option value="">Select...</option>
-  			<option value="S">S</option>
-  			<option value="M">M</option>
-			<option value="L">L</option>
-  			<option value="X">XL</option>
-            </select>
-			</div>
-			
-			<div class="form-group">
-			<label class="heading">Choose event</label>
-			<select name="Event">
-  			<option value="">Select...</option>
-			<option value="Saturdayay">Saturday</option>
-  			<option value="Sunday">Sunday</option>
-  			</select>
-			</div>
-			
-			<div class="form-group">
+            <div class="form-group">
 			<label for="email">Email Address</label>
 			<input type="email" id="email" name="Email" required>
 			</div>
@@ -76,6 +47,69 @@ include 'header.php';
 			<input type="text" id="emergencyContactNumber" name="EmergencyContactNumber" required>
 			</div>
 			
+            <h3>Registr For The Saturday Event</h3>
+            <div class="form-group">
+			<label class="heading">Choose event</label>
+			<select id="saturdayEvent" name="SaturdayEvent">
+  			<option value="">Select...</option>
+			<option value="Long Course Triathlon">Long Course Triathlon</option>
+  			<option value="Olympic Triathlon">Olympic Triathlon</option>
+            <option value="10K">10K</option>
+            <option value="Half Marathon">Half Marathon</option>
+  			</select>
+			</div>
+            
+            <div class="form-group">
+			<label class="heading">Role</label>
+			<select id="role" name="Role">
+  			<option value="">Select...</option>
+  			<option value="Athlete">Athlete</option>
+  			<option value="Vsolunteer">Volunteer</option>
+            </select>
+			</div>
+			
+			<div class="form-group">
+			<label class="heading">T-shirt Size</label>
+			<select id="tshirtSize" name="TshirtSize">
+  			<option value="">Select...</option>
+  			<option value="S">S</option>
+  			<option value="M">M</option>
+			<option value="L">L</option>
+  			<option value="X">XL</option>
+            </select>
+			</div>
+            
+            <h3>Registr For The Sunday Event</h3>
+            <div class="form-group">
+			<label class="heading">Choose event</label>
+			<select id="sundayEvent" name="SundayEvent">
+  			<option value="">Select...</option>
+			<option value="Sprint Triathlon">Sprint Triathlon</option>
+  			<option value="Try-a-Tri">Try-a-Tri</option>
+            <option value="Splash n Dash">Splash n Dash</option>
+  			</select>
+			</div>
+            
+			<div class="form-group">
+			<label class="heading">Role</label>
+			<select id="role1" name="Role1">
+  			<option value="">Select...</option>
+  			<option value="Athlete">Athlete</option>
+  			<option value="Vsolunteer">Volunteer</option>
+            </select>
+			</div>
+			
+			<div class="form-group">
+			<label class="heading">T-shirt Size</label>
+			<select id="tshirtSize1"name="TshirtSize1">
+  			<option value="">Select...</option>
+  			<option value="S">S</option>
+  			<option value="M">M</option>
+			<option value="L">L</option>
+  			<option value="X">XL</option>
+            </select>
+			</div>
+	
 			<div class="form-group">
 			<label for="specialneed">Special Need</label>
 			<textarea name="Massege" id="massege" cols= "30" rows="10">
@@ -85,7 +119,6 @@ include 'header.php';
 			</form>
 		</div>
 		<div id="status"></div>
-        <h3>NOTE: Tech shirts guaranteed to pre-registered participants only.</h3>
 		</section>
     
      <div class="weather">
