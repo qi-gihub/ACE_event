@@ -5,7 +5,7 @@ include 'header.php';
      <slideshow> 
            <div class="slideshow">   
        <div class="slideshow-item">
-            <img src="images/ace1.png" alt="Women-with-usa-flag">
+            <img src="images/ace1.png" alt="Woman-with-usa-flag">
            <div class="slideshow-item-text">
            <h5>OLYMPIC RUN </h5>
                <p>10K - A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (one hill total with a minimal elevation gain).</p>
